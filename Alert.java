@@ -1,7 +1,7 @@
 public abstract class Alert {
-    Stock stock;
-    double targetPrice;
-    boolean isActive;
+   private Stock stock;
+   private double targetPrice;
+   private boolean isActive;
 
 Alert(Stock stock, double targetPrice){
     this.stock=stock;
@@ -22,5 +22,7 @@ boolean isActive(){
 boolean deactivate(){
     return isActive=false;
 }
-
+String TooString(){
+return "[" + getStockSymbol() + " | Target: " + targetPrice +" | Active: " + isActive + "]";
+}
 }
