@@ -18,7 +18,7 @@ abstract class Stock
     }
     public double getcurrentPrice() 
     {
-    return currentPrice;
+    return price;
     }
     protected void setPrice(double newPrice)
     {
