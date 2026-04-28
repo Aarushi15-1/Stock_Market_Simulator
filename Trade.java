@@ -10,7 +10,7 @@ public abstract class Trade{
     public Trade(Stock stock, int quantity, String type, String user){
         this.stock=stock;
         this.quantity=quantity;
-        this.price=stock.getprice();
+        this.price=stock.getPrice();
         this.type=type;
         this.user=user;
     }
@@ -23,7 +23,7 @@ public abstract class Trade{
 
     }
 
-    public double getPrice(){
+    public double showPrice(){
         return price;
     }
 
