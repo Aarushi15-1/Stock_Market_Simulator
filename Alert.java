@@ -1,13 +1,26 @@
 public abstract class Alert {
-    String stockSymbol;
+    Stock stock;
     double targetPrice;
     boolean isActive;
 
-Alert(String stockSymbol, double targetPrice){
-    this.stockSymbol=stockSymbol;
+Alert(Stock stock, double targetPrice){
+    this.stock=stock;
     this.targetPrice=targetPrice;
     this.isActive=true;
 }
-abstract void checkAndTrigger(currentPrice);
+double currentPrice=stock.getcurrentPrice();
+abstract void checkAndTrigger(double currentPrice);
+Stock getStockSymbol(){
+    return stock;
+}
+double getTargetPrice(){
+    return targetPrice;
+}
+boolean isActive(){
+    return isActive;
+}
+boolean deactivate(){
+    return isActive=false;
+}
 
 }
