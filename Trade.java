@@ -4,13 +4,13 @@ public abstract class Trade{
     private Stock stock;
     private String type;
     private int quantity;
-    private double price;
+    private double current_price;
     private String user;
 
     public Trade(Stock stock, int quantity, String type, String user){
         this.stock=stock;
         this.quantity=quantity;
-        this.price=stock.getcurrentPrice();
+        this.current_price=stock.getcurrentPrice();
         this.type=type;
         this.user=user;
     }
@@ -24,7 +24,7 @@ public abstract class Trade{
     }
 
     public double getPrice(){
-        return price;
+        return current_price;
     }
 
     public int getQuantity(){
