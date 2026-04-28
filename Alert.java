@@ -1,3 +1,4 @@
+
 public abstract class Alert {
    private Stock stock;
    private double targetPrice;
