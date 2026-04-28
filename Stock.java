@@ -25,7 +25,5 @@ abstract class Stock
         currentPrice = newPrice;
     }
     public abstract void simulatePrice();
-    public String toString() {
-        return symbol + " | " + name + " | ₹" + currentPrice;
-    }
+
 }
