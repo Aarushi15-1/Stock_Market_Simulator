@@ -1,12 +1,12 @@
 abstract class Stock
 {
     private String name, symbol;
-    private double currentPrice;
+    private double price;
     Stock(String name, String symbol, double currentPrice)
     {
         this.name = name;
         this.symbol = symbol;
-        this.currentPrice = currentPrice;
+        this.price = price;
     }
     public String getName() 
     {
@@ -22,7 +22,7 @@ abstract class Stock
     }
     protected void setPrice(double newPrice)
     {
-        currentPrice = newPrice;
+        price = newPrice;
     }
     public abstract void simulatePrice();
 
