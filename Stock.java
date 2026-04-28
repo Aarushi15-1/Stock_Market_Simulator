@@ -16,7 +16,7 @@ abstract class Stock
     {
     return symbol;
     }
-    public String getPrice() 
+    public double getPrice() 
     {
     return currentPrice;
     }

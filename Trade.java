@@ -1,16 +1,16 @@
 import java.util.*;
 
 public abstract class Trade{
-    private String stock_name;
+    private Stock stock;
     private String type;
     private int quantity;
     private double price;
     private String user;
 
-    public Trade(String stock_name, int quantity, double price, String type, String user){
-        this.stock_name=stock_name;
+    public Trade(Stock stock, int quantity, String type, String user){
+        this.stock=stock;
         this.quantity=quantity;
-        this.price=price;
+        this.price=stock.getprice();
         this.type=type;
         this.user=user;
     }
@@ -18,8 +18,8 @@ public abstract class Trade{
         return user;
     }
      
-    public String getStock(){
-        return stock_name;
+    public Stock getStock(){
+        return stock;
 
     }
 
