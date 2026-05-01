@@ -2,7 +2,7 @@ abstract class Stock
 {
     private String name, symbol;
     private double price;
-    Stock(String name, String symbol, double currentPrice)
+    Stock(String name, String symbol, double price)
     {
         this.name = name;
         this.symbol = symbol;
